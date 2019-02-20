@@ -1,14 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+}
 body{
     background-color: #2f2822;
     margin: 0;
     padding: 0;
 }
 header{
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 .head{
-    margin-top: 21px;
-    padding: 0 16px;
+    position: fixed;
+    width: 100%;
+    margin: 20px 0;
+}
+.head-inner{
+    padding: 0 16px;    
 }
 .logo{
     font-family: "Hiragino Kaku Gothic Std";
@@ -23,12 +31,12 @@ header{
 }
 
 .logo span:nth-child(1){
-    color: #e6686a;
+    color: #2e7a88;
     margin-right: 4.5px;
 }
 
 .logo span:nth-child(2){
-    color: #9A9DA2;
+    color: #bee2e7;
 }
 
 .navBar{
@@ -66,4 +74,93 @@ header{
     display: block;
     clear: both;
     content: '';
+}
+
+.banner{
+    width: 100%;
+    height: 515px;
+    background-image: url(flower.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.centerCard{
+    max-width: 940px;
+    background-color:white;
+    margin: 0 auto;
+}
+.infoCard{
+    padding: 50px;
+}
+.infoCard .pic{
+    float: left;
+    margin-right: 65px;
+}
+
+.rightInfo{
+    width: 470px;
+    float: left;
+}
+.rightInfo > .hello{
+    background-color: #2e7a88;
+    color: white;
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+}
+.rightInfo > .hello > .triangle{
+    border: 10px solid #2e7a88;
+    width: 0;
+    border-top-width: 0;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 100%;
+    left: 4px;
+}
+.rightInfo .name{
+    margin-top: 18px;
+}
+.rightInfo hr{
+    margin: 20px 0;
+}
+
+.rightInfo dl dt{
+    float: left;
+    width: 29%;
+    font-weight: bold;
+    padding: 5px 0;
+
+}
+.rightInfo dl dd{
+    float: left;
+    padding: 5px 0;
+    width: 69%;
+    color: #9da0a7;
+}
+
+.footer{
+    background-color: #2e7a88;
+    text-align: center;
+}
+
+.footer .icon {
+    width: 30px; height: 30px;
+    vertical-align: -0.15em;
+    fill: #bee2e7;
+    overflow: hidden;
+    margin: 14px 10px;
+    border: 1px solid transparent;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.footer .icon:hover{
+    background-color: #1e535c;
 }

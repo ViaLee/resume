@@ -36,7 +36,7 @@
     <div class="centerCard">
         <div class="infoCard clearfix">
             <div class="pic">
-                <img src="dot.png" alt="照片" width="299" height="347">
+                <img src="img/dot.png" alt="照片" width="299" height="347">
             </div>
             <div class="rightInfo">
                     <span class="hello">
@@ -74,9 +74,84 @@
                 </svg>
         </footer>
     </div>
-    <div>
-        <p>下载简历PDF文档</p>
-        <p>其他信息</p>
-    </div>
+    <section class="moreInfo">
+        <div class="download">
+            <span>
+            <a download href="img/flower.jpeg" target="_blank">下载
+                PDF
+                简历</a>
+            </span>
+        </div>
+        <p>一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息</p>
+    </section>
+    <section class="skillPart">
+        <div class="skillTitle">技能</div>
+        <div class="skill">
+            <!-- <div class="skillContent"> -->
+                <div class="skillProcess">
+                    <ol class="clearfix">
+                        <li>
+                            <span>HTML5&amp;CSS3</span>
+                            <div class="processLine" style="border-left-width:120px;"></div>
+                        </li>
+                        <li>
+                            <span>JavaScript</span>
+                            <div class="processLine" style="border-left-width:130px;"></div>
+                        </li>
+                        <li>
+                            <span>jQuery</span>
+                            <div class="processLine" style="border-left-width:140px;"></div>
+                        </li>
+                        <li>
+                            <span>Vue.js</span>
+                            <div class="processLine" style="border-left-width:150px;"></div>
+                        </li>
+                        <li>
+                            <span>React</span>
+                            <div class="processLine" style="border-left-width:160px;"></div>
+                        </li>
+                        <li>
+                            <span>Node.js</span>
+                            <div class="processLine" style="border-left-width:170px;"></div>
+                        </li>
+                    </ol>
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+    <section class="portfolioPart">
+            <div class="skillTitle">作品集</div>
+            <nav>
+                <ol class="clearfix">
+                    <li id="p1">所有</li>
+                    <li id="p2">框架</li>
+                    <li id="p3">原生js&css</li>
+                </ol>
+                <div class="portfolioBar" id="portfolioBar">
+                </div>
+            </nav>
+            <div class="portfolio clearfix">
+                <div class="one">
+                    <img src="img/one.jpeg" alt="作品1" width="597px" height="606px">
+                </div>
+                <div class="two">
+                    <img src="img/two.jpeg" alt="作品2" width="290px" height="290px">
+                </div>
+                <div class="three">
+                    <img src="img/three.jpeg" alt="作品3" width="290px" height="290px">
+                </div>
+            </div>
+    </section>
+    <script>
+        p1.onclick = function(){
+            portfolioBar.className = 'portfolioBar-1';
+        }
+        p2.onclick = function(){
+            portfolioBar.className = 'portfolioBar-2';
+        }
+        p3.onclick = function(){
+            portfolioBar.className = 'portfolioBar-3';
+        }
+    </script>
 </body>
 </html>

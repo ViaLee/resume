@@ -3,12 +3,9 @@
     padding: 0;
 }
 body{
-    background-color: #2f2822;
+    background-color: #e8f6f8;
     margin: 0;
     padding: 0;
-}
-header{
-    /* margin: 20px 0; */
 }
 .head{
     position: fixed;
@@ -67,7 +64,7 @@ header{
 }
 
 .navBar ul li a:hover{
-    border-bottom: 3px solid #e06567;
+    border-bottom: 3px solid #bee2e7;
 }
 
 .clearfix::after{
@@ -79,7 +76,7 @@ header{
 .banner{
     width: 100%;
     height: 515px;
-    background-image: url(flower.jpeg);
+    background-image: url(img/flower.jpeg);
     background-size: cover;
     background-position: center center;
 }
@@ -93,6 +90,7 @@ header{
     max-width: 940px;
     background-color:white;
     margin: 0 auto;
+    margin-top: -340px;
 }
 .infoCard{
     padding: 50px;
@@ -112,6 +110,7 @@ header{
     padding: 4px 16px;
     line-height: 22px;
     position: relative;
+    top: 5px;
 }
 .rightInfo > .hello > .triangle{
     border: 10px solid #2e7a88;
@@ -125,23 +124,23 @@ header{
     left: 4px;
 }
 .rightInfo .name{
-    margin-top: 18px;
+    margin-top: 35px;
 }
 .rightInfo hr{
-    margin: 20px 0;
+    margin: 16px 0;
+    margin-bottom: 20px;
 }
 
 .rightInfo dl dt{
     float: left;
-    width: 29%;
+    width: 30%;
     font-weight: bold;
     padding: 5px 0;
-
 }
 .rightInfo dl dd{
     float: left;
     padding: 5px 0;
-    width: 69%;
+    width: 70%;
     color: #9da0a7;
 }
 
@@ -163,4 +162,121 @@ header{
 
 .footer .icon:hover{
     background-color: #1e535c;
+}
+
+.moreInfo{
+    margin-top: 32px;
+    color: black;
+    text-align: center;
+}
+.moreInfo p{
+    width: 940px;
+    display: inline-block;
+}
+.moreInfo .download {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid #cdcfd1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    transform: box-shadow 0.4s;
+    border-radius: 2px;
+}
+.moreInfo .download a{
+    text-decoration-line: none;
+    color: black;
+}
+.moreInfo .download:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ecf8fa;
+}
+.moreInfo > p{
+    margin: 40px 0;
+}
+ .skillTitle{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+.skillProcess > ol >li,
+.portfolioPart > nav > ol >li{
+    list-style: none;
+    float: left;
+}
+.skillProcess > ol >li{
+    width: 48%;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.skillProcess > ol >li:nth-child(even){
+    margin-left: 30px;
+}
+
+.skill{
+    margin: 0 auto;
+    background-color: white;    
+    border: 1px solid #9da0a7;
+    padding: 38px 38px 0;
+    max-width: 860px;
+}
+.skillProcess .processLine,
+.portfolioPart  .portfolioBar,
+.portfolioBar-1,
+.portfolioBar-2,
+.portfolioBar-3{
+    height: 8px;
+    background-color: #bee2e7;
+    border-left: 100px solid #2e7a88;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.portfolioPart{
+    max-width: 940px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.portfolioPart > .portfolio{
+    height: 597px;
+}
+
+.portfolioPart > nav {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.portfolioPart > nav > ol >li{
+    margin: 0 12px; 
+    cursor: pointer;
+}
+.portfolioPart  .portfolioBar{
+    border-left: 60px solid #2e7a88;
+}
+.portfolioBar-1{
+    border-left-width: 50px;
+}
+.portfolioBar-2{
+    border-left: 65px solid #bee2e7;
+    border-right: 120px solid #bee2e7;
+    background-color: #2e7a88;
+}
+
+.portfolioBar-3{
+    border-left-width: 0px;
+    border-right: 115px solid #2e7a88;
+}
+
+.portfolioPart > .portfolio > div{
+    float: left;
+}
+.portfolioPart > .portfolio > .one{
+    margin-right: 52px;
+}
+.portfolioPart > .portfolio > .two{
+    margin-bottom: 21px;
 }

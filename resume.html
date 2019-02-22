@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <script src="https://at.alicdn.com/t/font_1052437_qe3zzou7wv.js"></script>
+    <script src="https://at.alicdn.com/t/font_1052437_mw1a4x47yom.js"></script>
     <title>My Resume</title>
 </head>
 <body>
@@ -18,9 +18,9 @@
                 </div>
                 <nav class="navBar">
                     <ul class="clearfix">
-                        <li><a href="#">关于</a></li>
-                        <li><a href="#">技能</a></li>
-                        <li><a href="#">作品</a></li>
+                        <li><a href="#info">关于</a></li>
+                        <li><a href="#skill">技能</a></li>
+                        <li><a href="#portfolio">作品</a></li>
                         <li><a href="#">博客</a></li>
                         <li><a href="#">日历</a></li>
                         <li><a href="#">联系方式</a></li>
@@ -33,7 +33,7 @@
             <div class="mask"></div>
         </div>
     </header>
-    <div class="centerCard">
+    <div class="centerCard" id="info">
         <div class="infoCard clearfix">
             <div class="pic">
                 <img src="img/dot.png" alt="照片" width="299" height="347">
@@ -51,27 +51,29 @@
                 <!-- <div class="centerBottom"> -->
                     <dl class="infoItem">
                         <dt>年龄</dt>
-                            <dd>18</dd>
+                            <dd>22</dd>
                         <dt>所在城市</dt>
                             <dd>上海</dd>
                         <dt>邮箱</dt>
-                            <dd>1234567@qq.com</dd>
+                            <dd>18861262117@qq.com</dd>
                         <dt>手机</dt>
-                            <dd>12345678923</dd>
+                            <dd>18861262117</dd>
                     </dl>
                 <!-- </div> -->
             </div>
         </div>
         <footer class="footer">
-                <svg class="icon" aria-hidden="true">
+            <a href="https://github.com/ViaLee" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-githublogo"></use>
-                </svg>
+                </svg></a>
+            <a href="https://weibo.com/u/5725507200" target="_blank">            
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-weibo"></use>
-                </svg>
+                </svg></a>
+            <a href="https://www.jianshu.com/u/4cb9ae03a357" target="_blank">
                 <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-segmentfault"></use>
-                </svg>
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg></a>
         </footer>
     </div>
     <section class="moreInfo">
@@ -85,7 +87,7 @@
         <p>一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息</p>
     </section>
     <section class="skillPart">
-        <div class="skillTitle">技能</div>
+        <div class="skillTitle" id="skill">技能</div>
         <div class="skill">
             <!-- <div class="skillContent"> -->
                 <div class="skillProcess">
@@ -96,30 +98,30 @@
                         </li>
                         <li>
                             <span>JavaScript</span>
-                            <div class="processLine" style="border-left-width:130px;"></div>
+                            <div class="processLine" style="border-left-width:50px;"></div>
                         </li>
                         <li>
                             <span>jQuery</span>
-                            <div class="processLine" style="border-left-width:140px;"></div>
+                            <div class="processLine" style="border-left-width:8px;"></div>
                         </li>
                         <li>
                             <span>Vue.js</span>
-                            <div class="processLine" style="border-left-width:150px;"></div>
+                            <div class="processLine" style="border-left-width:50px;"></div>
                         </li>
                         <li>
                             <span>React</span>
-                            <div class="processLine" style="border-left-width:160px;"></div>
+                            <div class="processLine" style="border-left-width:0px;"></div>
                         </li>
                         <li>
                             <span>Node.js</span>
-                            <div class="processLine" style="border-left-width:170px;"></div>
+                            <div class="processLine" style="border-left-width:30px;"></div>
                         </li>
                     </ol>
                 </div>
             <!-- </div> -->
         </div>
     </section>
-    <section class="portfolioPart">
+    <section class="portfolioPart" id="portfolio">
             <div class="skillTitle">作品集</div>
             <nav>
                 <ol class="clearfix">

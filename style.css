@@ -60,6 +60,7 @@ body{
     width: 100%;
     padding: 20px 0;       
     transition: all 1s;
+    z-index: 1;
 }
 .head-inner{
     padding: 0 16px;    
@@ -148,6 +149,8 @@ body{
     content: '';
     display: block;
     padding-top: 4px;
+    position: absolute;
+    top: 20px;
     background-color: #2e7a88;
     animation:.5s after;
     width: 100%;

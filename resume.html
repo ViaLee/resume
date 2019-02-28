@@ -9,8 +9,11 @@
     <title>My Resume</title>
 </head>
 <body>
+    <div id="welcome" class="welcome welcomeactive">
+        <div class="loadingpage"></div>
+    </div>
     <header>
-        <div class="head clearfix">
+        <div class="head clearfix" id="topHead">
             <div class="head-inner">
                 <div class="logo">
                     <span>RS</span>
@@ -20,11 +23,24 @@
                     <ul class="clearfix">
                         <li><a href="#info">关于</a></li>
                         <li><a href="#skill">技能</a></li>
-                        <li><a href="#portfolio">作品</a></li>
-                        <li><a href="#">博客</a></li>
-                        <li><a href="#">日历</a></li>
-                        <li><a href="#">联系方式</a></li>
-                        <li><a href="#">其他</a></li>
+                        <li>
+                            <a href="#portfolio">作品</a>
+                            <ul class="clearfix" id="NavBarlist">
+                                <li class="subli">作品1</li>
+                                <li class="subli">作品2</li>
+                                <li class="subli">作品3</li>
+                            </ul>
+                        </li>
+                        <li><a href="#blog">博客</a>
+                            <ul class="clearfix">
+                                    <li class="subli">博客1</li>
+                                    <li class="subli">博客2</li>
+                                    <li class="subli">博客3</li>
+                                </ul>
+                            </li>
+                        <li><a href="#calander">日历</a></li>
+                        <li><a href="#number">联系方式</a></li>
+                        <li><a href="#other">其他</a></li>
                     </ul>
                 </nav>
             </div>
@@ -144,16 +160,6 @@
                 </div>
             </div>
     </section>
-    <script>
-        p1.onclick = function(){
-            portfolioBar.className = 'portfolioBar-1';
-        }
-        p2.onclick = function(){
-            portfolioBar.className = 'portfolioBar-2';
-        }
-        p3.onclick = function(){
-            portfolioBar.className = 'portfolioBar-3';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

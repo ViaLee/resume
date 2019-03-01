@@ -155,6 +155,16 @@ body{
     animation:.5s after;
     width: 100%;
 }
+.active::after{
+    content: '';
+    display: block;
+    padding-top: 4px;
+    position: absolute;
+    top: 20px;
+    background-color: #2e7a88;
+    animation:.5s after;
+    width: 100%;
+}
 @keyframes after{
     0%{
         width: 0;

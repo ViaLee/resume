@@ -1,58 +1,70 @@
-p1.onclick = function(){
-    portfolioBar.className = 'portfolioBar-1';
+
+portrolioBar() //作品集滚动条
+listenScroll()  //页面滚动事件
+listentomouseonnavBar()  //导航条鼠标监听
+quitloading()    //loading页面
+
+
+// ---------------------------------------------------
+function portrolioBar () {
+    p1.onclick = function(){
+        portfolioBar.className = 'portfolioBar-1';
+    }
+    p2.onclick = function(){
+        portfolioBar.className = 'portfolioBar-2';
+    }
+    p3.onclick = function(){
+        portfolioBar.className = 'portfolioBar-3';
+    }
 }
-p2.onclick = function(){
-    portfolioBar.className = 'portfolioBar-2';
+function listenScroll () {
+    // document.onscroll = function navscroll (xxx) {
+    window.onscroll = function navscroll (xxx) {
+        highNightLi()
+        listenNavBar()
+    }
 }
-p3.onclick = function(){
-    portfolioBar.className = 'portfolioBar-3';
-}
-listenScroll()
-listentomouseonnavBar()
-quitloading() 
 function quitloading(){
     var welcome = document.getElementById('welcome')
     welcome.classList.remove('welcomeactive')
     console.log('loadingover')
 }
-
-function listenScroll () {
-    // document.onscroll = function navscroll (xxx) {
-    window.onscroll = function navscroll (xxx) {
-        let targetElement = document.querySelectorAll('[data-x]')
-        let minindex = 0
-        for(var i=1;i<targetElement.length;i++){
-            var x = Math.abs(targetElement[i].offsetTop-window.scrollY)
-            var y = Math.abs(targetElement[minindex].offsetTop-window.scrollY)
-            // console.log()
-            if(x<y){
-                minindex = i
-            }
-            // var top1 = Math.abs(targetElement[0].offsetTop-window.scrollY)
-            // var top2 = Math.abs(targetElement[1].offsetTop-window.scrollY)
-            // var top3 = Math.abs(targetElement[2].offsetTop-window.scrollY)
-            // var x=top1
-            //     if(top2<x){
-            //         if(top3<x){
-            //             x=top3
-            //             console.log('top3')
-            //         } else {
-            //             x=top2
-            //             console.log('top2')
-            //         }
-            //     }else{console.log('top1')}
+function highNightLi(){
+    let targetElement = document.querySelectorAll('[data-x]')
+    let minindex = 0
+    for(var i=1;i<targetElement.length;i++){
+        var x = Math.abs(targetElement[i].offsetTop-window.scrollY)
+        var y = Math.abs(targetElement[minindex].offsetTop-window.scrollY)
+        // console.log()
+        if(x<y){
+            minindex = i
         }
-        console.log(minindex)
-        let targetId = targetElement[minindex].id
-        // let list = document.querySelectorAll('.navBar > ul > li > a')
-        // if(list[0].getAttribute('href') === '#'+ targetId)
-        let a = document.querySelector('a[href="#'+targetId+'"]')
-        // {
-        //  a.parentNode.classList.add('active')
-        // }
-        // console.log(top)
-    listenNavBar()
+        // var top1 = Math.abs(targetElement[0].offsetTop-window.scrollY)
+        // var top2 = Math.abs(targetElement[1].offsetTop-window.scrollY)
+        // var top3 = Math.abs(targetElement[2].offsetTop-window.scrollY)
+        // var x=top1
+        //     if(top2<x){
+        //         if(top3<x){
+        //             x=top3
+        //             console.log('top3')
+        //         } else {
+        //             x=top2
+        //             console.log('top2')
+        //         }
+        //     }else{console.log('top1')}
     }
+    // console.log(minindex)
+    let targetId = targetElement[minindex].id
+    // let list = document.querySelectorAll('.navBar > ul > li > a')
+    // if(list[0].getAttribute('href') === '#'+ targetId)
+    let a = document.querySelector('a[href="#'+targetId+'"]')
+    var list = a.parentNode.parentNode.childNodes
+    for(let i=0;i<list.length;i++){
+        if(list[i].tagName == 'LI'){
+        list[i].classList.remove('active')
+        }
+    }
+     a.parentNode.classList.add('active')
 }
 function listenNavBar () {
     let topHead = document.getElementById('topHead')

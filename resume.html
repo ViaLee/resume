@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.js"></script>
     <script src="https://at.alicdn.com/t/font_1052437_mw1a4x47yom.js"></script>
     <title>My Resume</title>
 </head>
@@ -49,7 +50,7 @@
             <div class="mask"></div>
         </div>
     </header>
-    <div class="centerCard" id="info">
+    <div data-x class="centerCard" id="info">
         <div class="infoCard clearfix">
             <div class="pic">
                 <img src="img/dot.png" alt="照片" width="299" height="347">
@@ -102,8 +103,8 @@
         </div>
         <p>一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息</p>
     </section>
-    <section class="skillPart">
-        <div class="skillTitle" id="skill">技能</div>
+    <section data-x class="skillPart" id="skill">
+        <div class="skillTitle">技能</div>
         <div class="skill">
             <!-- <div class="skillContent"> -->
                 <div class="skillProcess">
@@ -137,7 +138,7 @@
             <!-- </div> -->
         </div>
     </section>
-    <section class="portfolioPart" id="portfolio">
+    <section data-x class="portfolioPart" id="portfolio">
             <div class="skillTitle">作品集</div>
             <nav>
                 <ol class="clearfix">

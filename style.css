@@ -60,7 +60,7 @@ body{
     width: 100%;
     padding: 20px 0;       
     transition: all 1s;
-    z-index: 1;
+    z-index: 2;
 }
 .head-inner{
     padding: 0 16px;    
@@ -370,6 +370,7 @@ body{
     max-width: 940px;
     margin: 50px auto;
     text-align: center;
+    position: relative;
 }
 
 .portfolioPart > .portfolio{
@@ -411,3 +412,27 @@ body{
 .portfolioPart > .portfolio > .two{
     margin-bottom: 21px;
 }
+.swiper-container {
+    width: 100%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #e8f6f8;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }

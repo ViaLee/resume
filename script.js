@@ -1,22 +1,22 @@
 
-portrolioBar() //作品集滚动条
+// portrolioBar() //作品集滚动条
 listenScroll()  //页面滚动事件
 listentomouseonnavBar()  //导航条鼠标监听
 quitloading()    //loading页面
 
 
 // ---------------------------------------------------
-function portrolioBar () {
-    p1.onclick = function(){
-        portfolioBar.className = 'portfolioBar-1';
-    }
-    p2.onclick = function(){
-        portfolioBar.className = 'portfolioBar-2';
-    }
-    p3.onclick = function(){
-        portfolioBar.className = 'portfolioBar-3';
-    }
-}
+// function portrolioBar () {
+//     p1.onclick = function(){
+//         portfolioBar.className = 'portfolioBar-1';
+//     }
+//     p2.onclick = function(){
+//         portfolioBar.className = 'portfolioBar-2';
+//     }
+//     p3.onclick = function(){
+//         portfolioBar.className = 'portfolioBar-3';
+//     }
+// }
 function listenScroll () {
     // document.onscroll = function navscroll (xxx) {
     window.onscroll = function navscroll (xxx) {

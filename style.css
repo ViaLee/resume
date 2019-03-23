@@ -26,7 +26,7 @@ body{
 }
 .loadingpage::before, .loadingpage::after{
     animation:1.5s loading;
-    z-index:3;
+    z-index:999;
     position: absolute;
     top: 50%;
     left: 50%;

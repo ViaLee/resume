@@ -175,6 +175,17 @@
                     
             </div>
     </section>
+    <section class="msgbox">
+        <h3 style="padding-left:26px;">留言板</h1>
+            <div id="messageBoard">
+                <form action="" id="msgForm">
+                    <textarea type="text" id="msgtext"></textarea>
+                    <button type="submit" id="sbmbtn">提交</button>
+                </form>
+            </div>
+            <h5 style="margin:3px 26px;border-bottom:0.2px solid #59929c;">留言：</h5>
+            <div id="showmsg"></div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.js"></script>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
@@ -193,6 +204,95 @@
         prevEl: '.swiper-button-prev',
       },
     });
+</script>
+<script src="http://cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script>
+<script>
+!function(){
+    var model = {
+        init: function(){
+            var APP_ID = 'eGFqiw6Kb6mdh9jhzO2nKt08-gzGzoHsz';
+            var APP_KEY = '08IVPWpI6XatCROe74U4F8V2';
+            AV.init({
+                appId: APP_ID,
+                appKey: APP_KEY
+            });
+        },
+        fetch: function(){
+            var query = new AV.Query('msg')
+            return query.find()
+        },
+        save: function(){
+            var msg = AV.Object.extend('msg');
+            var query = new AV.Query('msg')
+            var msgobj = new msg();
+            return msgobj.save({
+                'words': msgtext.value
+            })
+        }
+    }
+
+    var controller = {
+        model: null,
+        init: function(model){
+            this.model = model
+            this.model.init()
+            this.showMsgContent()
+            this.bindEvents()
+        },
+        showMsgContent: function(){
+            this.model.fetch().then(function(msg){
+                var msgContent = msg.map(function (value,key) {
+                    return value.attributes.words
+                })
+            console.log(showmsg.textContent);
+                for(key in msgContent) {
+                    console.log(msgContent[key])
+                    var row = document.createElement('div')
+                    var span = document.createElement('span')
+                    var div = document.createElement('div')
+                    var loft = parseInt(key, 10)+1
+                    span.innerText = '第'+loft+'楼'
+                    row.innerText = msgContent[key]
+                    showmsg.appendChild(div)
+                    div.appendChild(span)
+                    div.appendChild(row)
+                    console.log(div)
+                }
+            }).then(function(){
+                controller.reverseDiv()
+            })
+        },
+        reverseDiv: function(msg){
+            console.log('qwe')
+            var list = document.querySelectorAll('#showmsg > div');
+                var str = "";
+                console.log(list)
+                for(var i=list.length-1;i >= 0; i--){
+                    str += "<div>" + list[i].innerHTML + "</div>";
+                }         
+                showmsg.innerHTML = str;
+        },
+        bindEvents: function(){
+            msgForm.addEventListener('submit', function(e){
+                e.preventDefault()
+                model.save().then(function(object){
+                    location.reload()  //页面刷新
+            // var row = document.createElement('div')
+            // var span = document.createElement('span')
+            // var div = document.createElement('div')
+            // console.log(object);
+            // var loft = msgContent.length+1
+            // span.innerText = '第'+loft+'楼'
+            // row.innerText = `${object.attributes.words}`
+            // div.appendChild(span)
+            // div.appendChild(row)
+            // showmsg.appendChild(div)
+                })
+            })
+        }
+    }
+    controller.init(model)
+}.call()
 </script>
 </body>
 </html>

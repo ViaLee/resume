@@ -26,11 +26,11 @@
                         <li><a href="#skill">技能</a></li>
                         <li><a href="#portfolio">作品</a>
                             <!-- li和a之间如果有回车则li的childNode[0]不是a，而是#text空格 -->
-                            <ul class="clearfix" id="NavBarlist">
+                            <!-- <ul class="clearfix" id="NavBarlist">
                                 <li class="subli">作品1</li>
                                 <li class="subli">作品2</li>
                                 <li class="subli">作品3</li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li><a href="#blog">博客</a>
                             <ul class="clearfix">
@@ -39,9 +39,9 @@
                                     <li class="subli">博客3</li>
                                 </ul>
                             </li>
-                        <li><a href="#calander">日历</a></li>
-                        <li><a href="#number">联系方式</a></li>
-                        <li><a href="#other">其他</a></li>
+                        <!-- <li><a href="#calander">日历</a></li> -->
+                        <!-- <li><a href="#number">联系方式</a></li> -->
+                        <li><a href="#msgbox">留言</a></li>
                     </ul>
                 </nav>
             </div>
@@ -111,19 +111,19 @@
                     <ol class="clearfix">
                         <li>
                             <span>HTML5&amp;CSS3</span>
-                            <div class="processLine" style="border-left-width:120px;"></div>
+                            <div class="processLine" style="border-left-width:220px;"></div>
                         </li>
                         <li>
                             <span>JavaScript</span>
-                            <div class="processLine" style="border-left-width:50px;"></div>
+                            <div class="processLine" style="border-left-width:240px;"></div>
                         </li>
                         <li>
                             <span>jQuery</span>
-                            <div class="processLine" style="border-left-width:8px;"></div>
+                            <div class="processLine" style="border-left-width:200px;"></div>
                         </li>
                         <li>
                             <span>Vue.js</span>
-                            <div class="processLine" style="border-left-width:50px;"></div>
+                            <div class="processLine" style="border-left-width:150px;"></div>
                         </li>
                         <li>
                             <span>React</span>
@@ -131,7 +131,7 @@
                         </li>
                         <li>
                             <span>Node.js</span>
-                            <div class="processLine" style="border-left-width:30px;"></div>
+                            <div class="processLine" style="border-left-width:80px;"></div>
                         </li>
                     </ol>
                 </div>
@@ -175,7 +175,7 @@
                     
             </div>
     </section>
-    <section class="msgbox">
+    <section data-x class="msgbox" id="msgbox">
         <h3 style="padding-left:26px;">留言板</h1>
             <div id="messageBoard">
                 <form action="" id="msgForm">

@@ -65,6 +65,15 @@ function highNightLi(){
         }
     }
      a.parentNode.classList.add('active')
+    //  if(targetId === 'skill'){
+    //     let processline = document.getElementsByClassName('processLine')
+    //     console.log(123)
+    //     console.log(processline)
+    //     for (let i =0;i<6;i++){
+    //         console.log(processline[i])
+    //         processline[i].classList.add('tran')
+    //     }
+    //  }
 }
 function listenNavBar () {
     let topHead = document.getElementById('topHead')
@@ -72,12 +81,12 @@ function listenNavBar () {
 //    console.log(list)
     if(window.scrollY > 0){
         topHead.classList.add('navScroll')
-        for(let i =0;i<7;i++){
+        for(let i =0;i<list.length;i++){
             list[i].classList.add('navBarfont')
         }
     }else if(window.scrollY==0){
         topHead.classList.remove('navScroll')
-        for(let i =0;i<7;i++){
+        for(let i =0;i<list.length;i++){
             list[i].classList.remove('navBarfont')
         }
     }

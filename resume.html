@@ -25,7 +25,7 @@
                 <nav class="navBar">
                     <ul class="clearfix">
                         <li><a href="#info">关于</a></li>
-                        <li><a href="#skill">技能</a></li>
+                        <!-- <li><a href="#skill">技能</a></li> -->
                         <li><a href="#portfolio">作品</a>
                             <!-- li和a之间如果有回车则li的childNode[0]不是a，而是#text空格 -->
                             <!-- <ul class="clearfix" id="NavBarlist">
@@ -109,10 +109,9 @@
         </div>
         <!-- <p>一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息一段其他信息</p> -->
     </section>
-    <section data-x class="skillPart" id="skill">
-        <div class="skillTitle">技能</div>
-        <div class="skill">
-            <!-- <div class="skillContent"> -->
+    <!-- <section data-x class="skillPart" id="skill"> -->
+        <!-- <div class="skillTitle">技能</div> -->
+        <!-- <div class="skill">
             <div class="skillProcess">
                 <ol class="clearfix">
                     <li>
@@ -135,15 +134,14 @@
                         <span>Node.js</span>
                         <div class="processLine" style="border-left-width:120px;"></div>
                     </li>
-                    <!-- <li>
+                    <li>
                         <span>Node.js</span>
                         <div class="processLine" style="border-left-width:80px;"></div>
-                    </li> -->
+                    </li>
                 </ol>
             </div>
-            <!-- </div> -->
-        </div>
-    </section>
+        </div> -->
+    <!-- </section> -->
     <section data-x class="portfolioPart" id="portfolio">
         <div class="skillTitle">作品集</div>
         <div class="portfolio clearfix">
@@ -151,27 +149,37 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="https://vialee.github.io/start/index.html" target="blank">
+                            <h3>导航页</h3>
                             <img src="img/one.jpg" alt="导航页" width="752px" height="477.6px">
+                            <div>学习JS时编写的一个可自定义网址的导航页，整体样式与键盘相似。以网站名称首字母为索引，按下键盘跳转至对应网页，键的左下角显示当前对应的网站的图标，鼠标悬浮在键上时可点击edit修改网址，修改成功时图标会自动更新，该键无网址或网址无效时图标显示为点。</div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                             <a href="https://github.com/ViaLee/Note" target="blank">
+                                <h3>在线便利贴</h3>
                                 <img src="img/note.png" alt="在线便利贴" width="752px" height="477.6px">
+                                <div>学习Node.js时使用Express框架开发的一款简单好用的在线便利贴，使用瀑布流布局做展示，根据各便利贴内容的高度自动调整排列方式。支持 Github 登录，登录后用户可创建、查看、修改、删除自己的便利贴，可设置每个便利贴是否公开到广场上，未登录时可查看广场上所有用户公开的便利贴。</div>
                             </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://vialee.github.io/painting-board/index.html" target="blank">
+                            <h3>在线简易画板</h3>
                             <img src="img/two.png" alt="在线简易画板" width="752px" height="477.6px">
+                            <div>学习JS 及 Canvas 时开发的的一个在线简易小画板，其提供在 PC 及手机端在线画画、橡皮擦、画笔调色、画作删除等功能，并支持画作下载。</div>                       
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a href="https://vialee.github.io/My-FM/index.html" target="blank">
+                            <h3>个人FM</h3>
                             <img src="img/fm.png" alt="个人FM" width="752px" height="477.6px">
+                            <div>学习jQuery和原生JS时开发的一个网页版可选择频道随机播放的电台模式音乐播放器。有三十多个可选频道，点击下一曲或频道可随机切换音乐。通过jquery的getJSON方法获取音乐信息，使用事件处理中心实现事件管理，使用setTimeInterval实现歌词，歌曲播放进度的实时更新。</div>
                         </a>
                     </div>
                     <div class="swiper-slide">
                             <a href="https://vialee.github.io/looplay-demo/index3.html" target="blank">
+                            <h3>无缝轮播</h3>
                                 <img src="img/three.png" alt="轮播demo" width="752px" height="477.6px">
+                                <div>一个无缝轮播demo</div>
                             </a>
                     </div>
                     <!-- <div class="swiper-slide">Slide 4</div>

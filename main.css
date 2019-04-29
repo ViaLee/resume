@@ -356,7 +356,12 @@ body {
   position: relative; }
 
 .portfolioPart > .portfolio {
-  height: 597px; }
+  height: 650px; 
+}
+
+.portfolioPart  > .skillTitle{
+  padding-bottom:0;
+}
 
 .portfolioPart > nav {
   display: inline-block;
@@ -413,7 +418,24 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center; }
+  align-items: center; 
+}
+  .swiper-slide h3{
+    margin-bottom: 5px;
+    color: #1e535c;
+    text-align: center
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets, 
+  .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:-5px!important;
+  }
+.swiper-slide a{
+  max-width: 750px;  
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  color:black;
+}
 
 .msgbox {
   max-width: 940px;
